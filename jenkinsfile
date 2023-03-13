@@ -3,7 +3,9 @@ pipeline{
 
 	stages{
 		stage('hola Mundo'){
-			sh 'echo hola mundo'
+			steps{
+				sh 'echo holaMundo'
+			}
 		}
 	}
 }
