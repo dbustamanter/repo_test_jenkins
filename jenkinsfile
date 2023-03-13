@@ -1,0 +1,9 @@
+pipeline{
+	agent any
+
+	stages{
+		stage('hola Mundo'){
+			echo 'hola mundo'
+		}
+	}
+}
