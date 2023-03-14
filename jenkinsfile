@@ -1,10 +1,14 @@
 pipeline{
 	agent any
 
+	parameters{
+		string(name:'nombre', description:'tag para ejecución')
+	}
+
 	stages{
 		stage('hola Mundo'){
 			steps{
-				sh 'echo holaMundo'
+				echo 'Hola ' +  nombre + ', Como estás?'
 			}
 		}
 	}
